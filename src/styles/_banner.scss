@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 63px;
+  
+    h1 {
+      position: absolute;
+      color: #FFFFFF;
+      font-size: 48px;
+      padding: 10px;
+    }
+  
+    .img-banner {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+        height: 223px;
+      }
+  }
+  
+  

@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .logo {
+      width: 210px;
+    }
+  
+    nav {
+      font-size: 24px;
+     
+      ul {
+        list-style: none; 
+        display: flex; 
+        gap: 57px; 
+  
+        li {
+          text-decoration: none; 
+          a{
+            text-decoration: none;
+            color: #FF6060; 
+          }
+          }
+          
+        }
+      }
+    }
+  
+  
+  
+  

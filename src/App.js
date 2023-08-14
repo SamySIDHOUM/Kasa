@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import RootLayout from './pages/Root';
 import Home from './pages/Home';

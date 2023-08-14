@@ -1,5 +1,6 @@
 import React from 'react';
 import aboutBanner from '../assets/about_banner_montagne.png';
+import '../styles/_about.scss';
 
 const aboutData = [
   {
@@ -24,7 +25,7 @@ export default function About() {
   return (
     <div>
       <div className="container">
-        <img src={aboutBanner} alt="About Banner" />
+        <img src={aboutBanner} alt="About Banner" className="img-about-banner" />
         {/* Ajout de la section "À propos" en utilisant les données aboutData */}
         {aboutData.map((item, index) => (
           <div key={index}>

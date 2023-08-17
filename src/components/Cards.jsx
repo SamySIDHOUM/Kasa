@@ -1,15 +1,18 @@
+import logements from '../data/logements.json'
 import { Link } from 'react-router-dom'
 import '../styles/_cards.scss'; 
 
 export default function Cards() {
   return (
     <div className="gallery">
-        <Link>
+      {logements.map(({ id, title, cover }) => (
+        <Link key={id} to={`/housing/${id}`}>
           <article>
-            <h3> cartes </h3>
+            <img src={cover} alt={title} />
+            <h3>{title}</h3>
           </article>
         </Link>
-     
+      ))}
     </div>
   )
 }

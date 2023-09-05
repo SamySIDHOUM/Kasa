@@ -2,6 +2,7 @@ import React from 'react';
 import aboutBanner from '../assets/about_banner_montagne.png';
 import '../styles/_about.scss';
 import aboutData from '../data/aboutLogements.json'
+import Collapse from '../components/Collapse';
 
 
 export default function About() {
@@ -10,10 +11,9 @@ export default function About() {
       <div className="container">
         <img src={aboutBanner} alt="About Banner" className="img-about-banner" />
         {aboutData.map((item, index) => (
-          <div key={index}>
-            <h2>{item.title}</h2>
-            <p>{item.text}</p>
-          </div>
+          <Collapse key={index} title={item.title}>
+          <p>{item.text}</p>
+          </Collapse>
         ))}
       </div>
     </div>

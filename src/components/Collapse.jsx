@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "../styles/_collapse.scss"
 
 export default function Collapse(props) {
   const [isCollapsed, setIsCollapsed] = useState(true);
@@ -9,7 +10,7 @@ export default function Collapse(props) {
 
   return (
     <div className={`collapse ${isCollapsed ? 'collapsed' : 'expanded'}`}>
-      <div className="header" onClick={toggleCollapse}>
+      <div className="custom" onClick={toggleCollapse}>
         <h3>{props.title}</h3>
         <div className="arrow">
           <i className={`fa-solid ${isCollapsed ? 'fa-chevron-down' : 'fa-chevron-up'}`}></i>

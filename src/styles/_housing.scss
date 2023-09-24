@@ -1,0 +1,58 @@
+.housing-info {
+    display: flex;
+    justify-content: space-between;
+
+  .housing-description {
+    color: #ff6060;
+  
+    h3 {
+      margin-top: 30px;
+      margin-bottom: 0;
+      font-size: 36px;
+    }
+  
+    p {
+      margin-top: 10px;
+    }
+  }
+  
+  .housing-tags {
+    color: #ffff;
+    padding-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 14px;
+  
+    .housing-tag {
+      background-color: #ff6060;
+      padding: 5px 40px;
+      border-radius: 10px;
+    }
+  }
+  
+  .housing-host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .host-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 24px;
+    width: 80%;
+  
+    p {
+      color: #ff6060;
+    }
+  
+    img {
+      border-radius: 50%;
+      margin-left: 10px;
+      width: 64px;
+    }
+  }
+ }

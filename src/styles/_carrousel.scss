@@ -1,0 +1,39 @@
+.carrousel {
+    position: relative;
+    margin-top: 20px;
+  
+    .carrousel-slide {
+      height: 415px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+  
+    .carrousel-details {
+      color: #FFFFFF;
+    }
+  
+    .carrousel-navigation-left,
+    .carrousel-navigation-right {
+      font-size: 65px;
+      position: absolute;
+      cursor: pointer;
+      top: 40%;
+    }
+  
+    .carrousel-navigation-left {
+      left: 23px;
+    }
+  
+    .carrousel-navigation-right {
+      right: 23px;
+    }
+  
+    .total {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      bottom: 25px;
+    }
+  }
+  

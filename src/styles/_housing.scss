@@ -17,12 +17,13 @@
   }
   
   .housing-tags {
-    color: #ffff;
-    padding-left: 0px;
     display: flex;
     flex-wrap: wrap;
+    color: #FFFFFF;
+    padding-left: 0px;
     gap: 10px;
     font-size: 14px;
+    list-style:none;
   
     .housing-tag {
       background-color: #ff6060;

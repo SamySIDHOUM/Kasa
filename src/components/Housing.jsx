@@ -1,4 +1,5 @@
 import "../styles/_housing.scss";
+import Tags from "./Tag";
 
 export default function Housing({ title, location, tags, host, rating }) {
     return (
@@ -7,9 +8,7 @@ export default function Housing({ title, location, tags, host, rating }) {
           <h3>{title}</h3>
           <p>{location}</p>
           <ul className="housing-tags">
-            {tags.map((tag, id) => (
-              <li key={id}>{tag}</li>
-            ))}
+            <Tags tags={tags} />
           </ul>
         </div>
         <div className="housing-host">

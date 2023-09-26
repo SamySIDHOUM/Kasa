@@ -1,0 +1,14 @@
+.stars {
+    display: flex;
+    margin-top: 24px;
+    font-size: 30px;
+    gap: 10px;
+  }
+  
+  .starActive {
+    color: #FF6060;
+  }
+  
+  .starInactive {
+    color: #E3E3E3;
+  }

@@ -1,5 +1,6 @@
 import "../styles/_housing.scss";
 import Tags from "./Tag";
+import Stars from "./Star";
 
 export default function Housing({ title, location, tags, host, rating }) {
     return (
@@ -17,7 +18,7 @@ export default function Housing({ title, location, tags, host, rating }) {
             <img src={host.picture} alt={host.name} />
           </div>
           <div className="stars">
-            {rating} étoiles
+            <Stars rating={rating} />
           </div>
         </div>
       </div>

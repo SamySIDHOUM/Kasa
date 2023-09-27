@@ -39,14 +39,17 @@ export default function Housings() {
             host={housingDetails.host}
             rating={housingDetails.rating}
           />
-          <div className="housing__collapse">
-            <Collapse title="Description" text={housingDetails.description} />
-            <Collapse
-              title="Équipements"
-              text={housingDetails.equipments.map((equipment, id) => (
-                <li key={id}>{equipment}</li>
-              ))}
-            />
+          <div className="housing-collapse">
+            <Collapse title="Description">
+              {housing.description}
+            </Collapse>
+            <Collapse title="Équipements">
+              <ul>
+                {housing.equipments.map((equipment, id) => (
+                  <li key={id}>{equipment}</li>
+                ))}
+              </ul>
+            </Collapse>
           </div>
         </main>
       </div>

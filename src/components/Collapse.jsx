@@ -9,11 +9,11 @@ export default function Collapse(props) {
   };
 
   return (
-    <div className={`collapse ${isCollapsed ? 'collapsed' : 'expanded'}`}>
+    <div className={"collapse " + (isCollapsed ? 'collapsed' : 'expanded')}>
       <div className="custom" onClick={toggleCollapse}>
         <h3>{props.title}</h3>
         <div className="arrow">
-          <i className={`fa-solid ${isCollapsed ? 'fa-chevron-down' : 'fa-chevron-up'}`}></i>
+          <i className={"fa-solid " + (isCollapsed ? 'fa-chevron-up' : 'fa-chevron-down')}></i>
         </div>
       </div>
       {!isCollapsed && <div className="content">{props.children}</div>}

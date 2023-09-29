@@ -4,6 +4,7 @@ import housingData from '../data/logements.json';
 import Carrousel from '../components/Carrousel';
 import Housing from '../components/Housing';
 import Collapse from '../components/Collapse';
+import Error from './Error';
 
 export default function Housings() {
   const params = useParams();
@@ -11,7 +12,7 @@ export default function Housings() {
   const housing = housingData.find((housing) => housing.id === params.id);
 
   if (housing === undefined) {
-    return ;
+    return  <Error />;
   }
 
   const housingDetails = {

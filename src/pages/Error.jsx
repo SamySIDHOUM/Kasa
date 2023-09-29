@@ -1,21 +1,19 @@
 import React from 'react';
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import { Link } from 'react-router-dom';
+import '../styles/_error.scss'
 
-function Error() {
+export default function Error() {
   return (
     <div>
-      <div className="error container">
-        <Header />
-        <div className="error__content">
+      <div className="error-container">
+        <div className="content">
           <h1>404</h1>
           <p>Oups! La page que vous demandez n'existe pas.</p>
-          <a href="/">Retourner sur la page d’accueil</a>
+          <Link to="/" className="back-home">
+            Retourner sur la page d’accueil
+          </Link>
         </div>
       </div>
-      <Footer />
     </div>
   )
-}
-
-export default Error
+  }

@@ -6,7 +6,7 @@ export default function Cards() {
   return (
     <div className="gallery">
       {logements.map(({ id, title, cover }) => (
-        <Link key={id} to={`/logement/${id}`}>
+        <Link key={id} to={`/logements/${id}`}>
           <article>
             <img src={cover} alt={title} />
             <h3>{title}</h3>

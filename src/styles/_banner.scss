@@ -1,3 +1,5 @@
+@import './mixins';
+
 .container {
     display: flex;
     position: relative;
@@ -10,7 +12,23 @@
       color: #FFFFFF;
       font-size: 48px;
       padding: 10px;
+      
+      @include tablet{
+        font-size: 30px;
+      }
+      @include mobile {
+        font-size: 24px;
+      }
     }
+
+    br {
+      display: none;
+  
+      @include mobile {
+        display: initial;
+      }
+    }
+
   
     .img-banner {
         width: 100%;
@@ -18,7 +36,12 @@
         border-radius: 25px;
         height: 223px;
         filter: brightness(65%);
+
+        @include tablet{
+          height: 160px;
+        }
+        @include mobile {
+          height: 111px;
+        }
       }
   }
-  
-  

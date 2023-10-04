@@ -1,3 +1,5 @@
+@import './mixins';
+
 header {
   display: flex;
   justify-content: space-between;
@@ -5,15 +7,37 @@ header {
 
   .logo {
     width: 210px;
+
+    @include tablet {
+      width: 180px ;
+    }
+    @include mobile {
+      width: 145px;
+    }
   }
 
   nav {
     font-size: 24px;
 
+    @include tablet{
+      font-size: 18px;
+    }
+    @include mobile {
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
     ul {
       list-style: none;
       display: flex;
       gap: 57px;
+      
+      @include tablet{
+        gap: 36px;
+      }
+      @include mobile {
+        gap: 26px;
+      }
 
       li {
         text-decoration: none;

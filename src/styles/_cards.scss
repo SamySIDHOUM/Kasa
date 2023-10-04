@@ -1,3 +1,5 @@
+@import './mixins';
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -9,9 +11,21 @@
     padding: 60px 39px;
     margin: 43px 0 43px 0;
 
+    @include mobile {
+      padding: 0;
+      display: initial;
+    }
+
     article {
       max-width: 340px;
       position: relative;
+
+      @include tablet {
+        max-width: 280px;
+      }
+      @include mobile {
+        margin-top: 22px;
+      }
     }
   
     img {
@@ -19,12 +33,16 @@
       height: 340px;
       border-radius: 10px;
       object-fit: cover;
+
+      @include mobile {
+        max-height: 255px;
+      }
     }
  
     h3 {
       position: absolute;
       bottom: 0;
-      left: 20px;
+      margin-left: 20px;
       max-width: 300px;
       color: #FFFFFF;
       padding: 5px;

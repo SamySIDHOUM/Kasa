@@ -1,0 +1,27 @@
+.housing-collapse {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 0 6% 0;
+  
+  .collapse {
+    border-radius: 10px;
+    width: 48%;
+    height: 52px;
+    
+    .content {
+      height: 145px; 
+      width: 100%;
+      font-size: medium;
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 0;
+        margin-left: 4%;
+      }
+    }
+  }
+}
+  
+  

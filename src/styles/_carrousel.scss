@@ -1,3 +1,5 @@
+@import './mixins';
+
 .carrousel {
     position: relative;
     margin-top: 20px;
@@ -7,6 +9,11 @@
       width: 100%;
       object-fit: cover;
       border-radius: 25px;
+
+      @include mobile {
+        height: 255px;
+        border-radius: 10px;
+      }
     }
   
     .carrousel-details {
@@ -19,14 +26,27 @@
       position: absolute;
       cursor: pointer;
       top: 40%;
+
+      @include mobile {
+        font-size: 20px;
+        top: 45%;
+      }
     }
   
     .carrousel-navigation-left {
       left: 23px;
+
+      @include mobile {
+        left: 6px;
+      }
     }
   
     .carrousel-navigation-right {
       right: 23px;
+
+      @include mobile {
+       right: 6px;
+      }
     }
   
     .total {
@@ -34,6 +54,10 @@
       width: 100%;
       text-align: center;
       bottom: 25px;
+
+      @include mobile {
+        display: none;
+      }
     }
   }
   

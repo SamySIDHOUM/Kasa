@@ -1,3 +1,5 @@
+@import './mixins';
+
 .error-container {
     color: #FF6060;
   
@@ -8,18 +10,47 @@
     align-items: center;
     margin: 40px 0 40px 0;
     font-family: Montserrat;
-  
+
+    @include mobile {
+      margin: 50px 30px 50px 28px;
+    }
+
     h1 {
       font-size: 288px;
       margin-bottom: 30px;
       margin-top: 0;
       font-weight: 700;
+      @include tablet {
+        font-size: 180px;
+      }
+      @include mobile {
+        font-size: 96px;
+        margin-bottom: 60px;
+      }
     }
   
     p {
       font-size: 36px;
       margin-bottom: 30px;
+      
+      @include tablet{
+        font-size: 27px;
+        margin-bottom: 45px;
+      }
+      @include mobile {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 60px;
+      }
     }
+    br {
+      display: none;
+  
+      @include mobile {
+        display: initial;
+      }
+    }
+
   }
   
   .back-home {

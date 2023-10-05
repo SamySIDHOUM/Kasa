@@ -1,3 +1,5 @@
+@import './mixins';
+
 .collapse {
   background-color: #FF6060;
   cursor: pointer;
@@ -11,6 +13,13 @@
     border-radius: 5px; 
     color: #F6F6F6;
 
+    @include tablet {
+      height: 40px;
+    }
+    @include mobile {
+      height: 30px;
+    }
+
     h3 {
       margin-left: 3%;
       width: 50%;
@@ -21,6 +30,13 @@
       font-size: 25px;
       margin-right: 3%;
       transition: transform 0.3s ease-in-out;
+
+      @include tablet {
+        font-size: 20px;
+      }
+      @include mobile {
+        font-size: 18px;
+      }
     }
   }
 

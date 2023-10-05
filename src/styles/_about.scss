@@ -1,8 +1,14 @@
+@import './mixins';
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 5% 0 5% 0;
+
+    @include mobile {
+      margin-bottom: 10%;
+    }
    
     .img-about-banner {
       width: 100%;
@@ -10,6 +16,13 @@
       border-radius: 25px;
       height: 223px;
       margin-bottom: 5%;
+
+      @include tablet{
+        height: 160px;
+      }
+      @include mobile {
+        height: 111px;
+      }
     }
   
     .about-item {
@@ -28,11 +41,29 @@
       width: 75%;
       margin-bottom: 3%;
       border-radius: 5px;
+
+      @include mobile {
+        width: 100%;
+        font-size: 13px;
+      }
+
       .content {
         height: 120px; 
         width: 100%;  
+
+        @include mobile {
+          margin-bottom: 10%;
+        }
+
         p {
           margin-left: 4%;
+
+          @include tablet {
+            font-size: small;
+          }
+          @include mobile {
+            font-size: smaller;
+          }
         }
     }
   }

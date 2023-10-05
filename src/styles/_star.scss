@@ -1,8 +1,15 @@
+@import './mixins';
+
 .stars {
     display: flex;
     margin-top: 24px;
     font-size: 30px;
     gap: 10px;
+
+    @include mobile {
+      font-size: 15px;
+      gap: 5px;
+    }
   }
   
   .starActive {

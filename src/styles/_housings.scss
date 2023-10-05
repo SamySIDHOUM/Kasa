@@ -1,18 +1,37 @@
+@import './mixins';
+
 .housing-collapse {
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin: 0 0 6% 0;
+
+    @include mobile {
+      flex-direction: column;
+    }
   
   .collapse {
     border-radius: 10px;
     width: 48%;
     height: 52px;
+
+    @include mobile {
+      width: 100%;
+      height: 30px;
+    }
     
     .content {
       height: 145px; 
       width: 100%;
       font-size: medium;
+
+      @include tablet {
+        font-size: small;
+      }
+      @include mobile {
+        font-size: smaller;
+        margin-bottom: 6%;
+      }
 
       ul {
         list-style: none;

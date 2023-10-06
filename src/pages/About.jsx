@@ -11,9 +11,7 @@ export default function About() {
       <div className="container">
         <img src={aboutBanner} alt="About Banner" className="img-about-banner" />
         {aboutData.map((item, index) => (
-          <Collapse key={index} title={item.title}>
-          <p>{item.text}</p>
-          </Collapse>
+          <Collapse key={index} title={item.title} text = {item.text}/>
         ))}
       </div>
     </div>

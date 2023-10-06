@@ -9,28 +9,29 @@
     @include mobile {
       flex-direction: column;
     }
-  
+  .expanded {
+    margin-bottom: 3%;
+  }
   .collapse {
     border-radius: 10px;
     width: 48%;
-    height: 52px;
 
     @include mobile {
       width: 100%;
-      height: 30px;
+      
     }
     
     .content {
-      height: 145px; 
+      //height: 145px; 
       width: 100%;
       font-size: medium;
 
       @include tablet {
         font-size: small;
+        
       }
       @include mobile {
         font-size: smaller;
-        margin-bottom: 6%;
       }
 
       ul {

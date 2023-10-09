@@ -7,10 +7,12 @@ export default function Cards() {
     <div className="gallery">
       {logements.map(({ id, title, cover }) => (
         <Link key={id} to={`/logements/${id}`}>
-          <article>
+          <figure>
             <img src={cover} alt={title} />
-            <h3>{title}</h3>
-          </article>
+            <figcaption>
+              <h3>{title}</h3>
+            </figcaption>
+          </figure>
         </Link>
       ))}
     </div>

@@ -15,13 +15,12 @@ export default function Carrousel({ pictures }) {
 
   return (
     <div className="carrousel">
-      <div>
-        <img
-          className="carrousel-slide"
-          src={pictures[currentSlide]}
-          alt="Photographie du logement"
-        />
-      </div>
+      <img
+        className="carrousel-slide"
+        src={pictures[currentSlide]}
+        alt="Photographie du logement"
+      />
+    
       {picturesLength > 1 && (
         <div className="carrousel-details">
           <div className="carrousel-navigation">

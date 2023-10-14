@@ -18,17 +18,15 @@
 
     @include mobile {
       width: 100%;
-      
     }
     
     .content {
-      //height: 145px; 
+      height: 145px; 
       width: 100%;
       font-size: medium;
 
       @include tablet {
         font-size: small;
-        
       }
       @include mobile {
         font-size: smaller;
@@ -42,6 +40,21 @@
       }
     }
   }
+  .collapsed {
+    height: 52px;
+
+    @include mobile {
+      height: 30px;
+    }
+  }
 }
-  
+.container {
+  width: 100%;
+  .carrousel {
+    width: 100%;
+  }
+  .housing-info {
+    width: 100%;
+  }
+}
   

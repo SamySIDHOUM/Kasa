@@ -23,11 +23,12 @@ export default function Collapse(props) {
       <div className="custom" onClick={toggleCollapse}>
         <h3>{props.title}</h3>
         <div className="arrow">
-          <i className={"fa-solid " + (isCollapsed ? 'fa-chevron-up' : 'fa-chevron-down')}></i>
+          <i className="fa-solid fa-chevron-up"></i>
         </div>
       </div>
-      {!isCollapsed && <div className="content">{content}</div>}
-      
+      {!isCollapsed && <div className="content">
+        <div className="content-text">{content}</div>
+      </div>} 
     </div>
   );
 }

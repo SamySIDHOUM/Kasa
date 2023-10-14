@@ -30,7 +30,6 @@
     }
 
     .arrow {
-      //width: 5%;
       font-size: 25px;
       margin-right: 3%;
       transition: transform 0.3s ease-in-out;
@@ -55,13 +54,23 @@
 
   &.expanded {
     .custom {
-      .arrow {
-        transform: rotate(180deg);
+      height: 52px; 
+
+      @include mobile {
+        height: 30px;
       }
+
+       .arrow {
+         transform: rotate(180deg);
+       }
     }
 
     .content {
       display: block;
+
+      .content-text {
+        margin: 2% 2%; 
+      }
       
       @include mobile {
         margin-bottom: 10%;

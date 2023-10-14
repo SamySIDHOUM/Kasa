@@ -30,23 +30,19 @@ export default function Housings() {
 
   return (
     <div className="container">
-      <main>
-        <Carrousel pictures={housingDetails.pictures} />
-        <Housing
-          id={housingDetails.id}
-          title={housingDetails.title}
-          location={housingDetails.location}
-          tags={housingDetails.tags}
-          host={housingDetails.host}
-          rating={housingDetails.rating}
-        />
-        <div className="housing-collapse">
-          <Collapse title="Description" text = {housing.description}/>
-           
-          <Collapse title="Équipements" text = {housing.equipments}/>
-          
-        </div>
-      </main>
+      <Carrousel pictures={housingDetails.pictures} />
+      <Housing
+        id={housingDetails.id}
+        title={housingDetails.title}
+        location={housingDetails.location}
+        tags={housingDetails.tags}
+        host={housingDetails.host}
+        rating={housingDetails.rating}
+      />
+      <div className="housing-collapse">
+        <Collapse title="Description" text = {housing.description}/>
+        <Collapse title="Équipements" text = {housing.equipments}/>
+      </div>
     </div>
   );
 }

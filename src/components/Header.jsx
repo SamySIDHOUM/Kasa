@@ -10,9 +10,11 @@ return (
     <img src={logo} alt="Logo de Kasa" className="logo" />
     <nav>
       <ul>
+        {/* Lien vers la page d'accueil avec une mise en surbrillance si l'emplacement correspond à "/" */}
         <li className={location.pathname === "/" ? "active" : ""}>
           <NavLink to="/">Accueil</NavLink>
         </li>
+        {/* Lien vers la page "À Propos" avec une mise en surbrillance si l'emplacement correspond à "/about" */}
         <li className={location.pathname === "/about" ? "active" : ""}>
           <NavLink to="/about">À Propos</NavLink>
         </li>

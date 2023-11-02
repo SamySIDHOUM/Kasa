@@ -10,12 +10,13 @@ import "../styles/_housings.scss";
 export default function Housings() {
   const params = useParams();
 
+  // Recherche du logement correspondant dans les données
   const housing = housingData.find((housing) => housing.id === params.id);
 
   if (housing === undefined) {
     return  <Error />;
   }
-
+  // Détails du logement à afficher
   const housingDetails = {
     id: housing.id,
     pictures: housing.pictures,

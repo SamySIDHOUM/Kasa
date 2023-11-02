@@ -4,10 +4,12 @@ import "../styles/_collapse.scss"
 export default function Collapse(props) {
   const [isCollapsed, setIsCollapsed] = useState(true);
 
+  // Fonction pour basculer l'état entre plié/déplié
   const toggleCollapse = () => {
     setIsCollapsed(!isCollapsed);
   };
   let content = "";
+  // Condition pour verifier si tableau ou non
   if (Array.isArray(props.text)){
     content =  <ul>
     {props.text.map((equipment, id) => (

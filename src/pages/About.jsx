@@ -10,6 +10,7 @@ export default function About() {
     <div>
       <div className="container">
         <img src={aboutBanner} alt="About Banner" className="img-about-banner" />
+        {/* Mapping à travers les données de aboutLogements.json pour afficher les informations de Collapse */}
         {aboutData.map((item, index) => (
           <Collapse key={index} title={item.title} text = {item.text}/>
         ))}
